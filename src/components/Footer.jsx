@@ -17,7 +17,7 @@ export const Footer = ({ activeComponent, setActiveComponent }) => {
             key={button.id}
             className={`relative w-full h-full text-xl duration-200 ${
               activeComponent === button.id
-                ? "font-bold bg-gradient-to-br from-[#0093E9] to-[#80D0C7] bg-[length:200%_200%] animate-gradient text-white"
+                ? "md:-translate-y-4 font-bold bg-gradient-to-br from-[#5EFCE8] to-[#736EFE] text-white"
                 : "font-extralight"
             }`}
             onClick={() => setActiveComponent(button.id)}
