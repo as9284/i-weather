@@ -1,18 +1,19 @@
-import React from "react";
-import Logo from "../assets/logo.webp";
+import Sunny from "../assets/sunny.webp";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 
 export const Home = () => {
   return (
     <>
-      <div className="relative w-full min-h-dvh m-auto flex justify-center items-center p-4">
-        <div className="w-full flex flex-col justify-center items-center gap-2">
-          <img src={Logo} className="w-24" alt="Weather logo" />
-          <h1 className="text-5xl font-bold">iWeather</h1>
-          <p className="text-lg font-light uppercase">Coming soon</p>
-          <l-ripples size="60" speed="2" color="white"></l-ripples>
-          <p className="absolute bottom-4 font-medium">
-            Powered by Open Meteo API 💖
-          </p>
+      <div className="relative w-full min-h-dvh m-auto flex justify-center items-center">
+        <img
+          className="absolute w-full h-full object-cover"
+          src={Sunny}
+          alt="Sunny day"
+        />
+        <div className="w-full min-h-dvh flex flex-col justify-between items-center">
+          <Header />
+          <Footer />
         </div>
       </div>
     </>
